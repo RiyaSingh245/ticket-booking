@@ -89,7 +89,7 @@ public class UserBookingService {
         try {
             TrainService trainService = new TrainService();
             return trainService.searchTrain(source, destination);
-        } catch (Exception ex) {
+        } catch (IOException ex) {
             System.out.println("There is something wrong!");
             return Collections.emptyList();
         }
