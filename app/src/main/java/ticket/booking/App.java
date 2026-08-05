@@ -23,7 +23,7 @@ public class App {
         try {
             userBookingService = new UserBookingService();
         } catch (IOException e) {
-            System.out.println("There is something wrong!" + e.getMessage());
+            System.out.println("There is something wrong : " + e.getMessage());
             return;
         }
 
